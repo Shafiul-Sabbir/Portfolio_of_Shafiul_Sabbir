@@ -260,7 +260,7 @@ section .title::after{
     content: "who i am";
 }
 .about .about-content .left{
-    width: 45%;
+    width: 40%;
 }
 .about .about-content .left img{
     height: 400px;
@@ -269,7 +269,7 @@ section .title::after{
     border-radius: 2%;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 60%;
 }
 .about .about-content .right .text{
     font-size: 25px;
