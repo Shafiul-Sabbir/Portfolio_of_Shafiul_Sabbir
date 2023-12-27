@@ -266,8 +266,9 @@ section .title::after{
     height: 400px;
     width: 312px;
     object-fit: fill;
-    border-radius: 2%;
-    border-color: #555;
+    border: 1px solid grey;
+    border-radius: 4%;
+    box-shadow: 3px 3px;
 }
 .about .about-content .right{
     width: 60%;
@@ -472,34 +473,19 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .c::before{
-    width: 90%;
+    width: 75%;
 }
 .skills-content .right .cpp::before{
-    width: 65%;
+    width: 75%;
 }
 .skills-content .right .python::before{
-    width: 45%;
-}
-.skills-content .right .python::before{
-    width: 45%;
-}
-.skills-content .right .ccna::before{
-    width: 85%;
-}
-.skills-content .right .comptia::before{
-    width: 95%;
-}
-.skills-content .right .html::before{
-    width: 95%;
-}
-.skills-content .right .css::before{
-    width: 80%;
+    width: 75%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 65%;
 }
 .skills-content .right .react::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .node::before{
     width: 50%;
@@ -507,10 +493,37 @@ section .title::after{
 .skills-content .right .express::before{
     width: 50%;
 }
+.skills-content .right .comptia::before{
+    width: 65%;
+}
+/* .skills-content .right .python::before{
+    width: 45%;
+} */
+
+.skills-content .right .html::before{
+    width: 85%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .bootstrap::before{
+    width: 85%;
+}
+.skills-content .right .tailwind::before{
+    width: 80%;
+}
+.skills-content .right .mui::before{
+    width: 80%;
+}
 .skills-content .right .mongo::before{
+    width: 55%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+.skills-content .right .psql::before{
     width: 50%;
 }
-
 /* feedback section styling */
 .feedback .title::after{
     content: "what they said";
