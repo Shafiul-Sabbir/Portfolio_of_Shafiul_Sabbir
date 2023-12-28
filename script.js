@@ -33,6 +33,22 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    $(document).ready(function() {
+        var hoverButton = $('#hoverButton1, #hoverButton2, #hoverButton3');
+        var additionalButtonsContainer = $('#additionalButtons1, #additionalButtons2, #additionalButtons3');
+    
+        // Show additional buttons on hover
+        hoverButton.mouseover(function() {
+            additionalButtonsContainer.removeClass('hidden');
+        });
+    
+        // Hide additional buttons when cursor is left
+        additionalButtonsContainer.mouseleave(function() {
+            additionalButtonsContainer.addClass('hidden');
+        });
+    });
+   
+
     // typing text animation script
     const typedScript = ["Problem Solver.", "Django Developer", "React Developer.", "MERN Stack Developer.", "Designer.", "Thinker." ]; 
     var typed = new Typed(".typing", {
@@ -70,4 +86,5 @@ $(document).ready(function(){
             }
         }
     });
+    
 });
