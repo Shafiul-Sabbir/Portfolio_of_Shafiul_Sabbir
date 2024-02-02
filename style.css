@@ -322,14 +322,14 @@ section .title::after{
 .web_development{
     width: 100%; /* Set the width of the main container as needed */
     overflow: hidden; /* Clear float */
-    margin-top: -19px;
     margin-left: -14px;
+    padding-bottom: 10px;
 }
 .sub_web_development{
     width: 50%; /* Each sub-div takes up 50% of the main container */
     float: left; /* Float left to position side by side */
     box-sizing: border-box; /* Include padding and border in the total width */
-    padding: 20px;
+    padding-left: 20px;
 }
 .soft_skill{
     width: 100%; /* Set the width of the main container as needed */
@@ -339,8 +339,7 @@ section .title::after{
 }
 .sub_soft_skills{
     width: 50%; /* Each sub-div takes up 50% of the main container */
-    padding-right: 5px;
-    float: left; /* Float left to position side by side */
+    float:left; /* Float left to position side by side */
     box-sizing: border-box;
 }
 /* project section styling */
@@ -479,7 +478,7 @@ section .title::after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+/* .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -502,6 +501,13 @@ section .title::after{
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
+} */
+.skills .skills-content{
+    width: 100%;
+    display: flex;
+}
+.skills .skills-content .right{
+    width: 30%;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -537,57 +543,33 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .c::before{
-    width: 75%;
+    width: 10%;
 }
 .skills-content .right .cpp::before{
-    width: 75%;
+    width: 15%;
 }
 .skills-content .right .python::before{
-    width: 75%;
+    width: 20%;
 }
-.skills-content .right .js::before{
-    width: 65%;
-}
-.skills-content .right .react::before{
-    width: 70%;
-}
-.skills-content .right .node::before{
-    width: 50%;
-}
-.skills-content .right .express::before{
-    width: 50%;
-}
-.skills-content .right .comptia::before{
-    width: 65%;
-}
-/* .skills-content .right .python::before{
-    width: 45%;
-} */
-
 .skills-content .right .html::before{
-    width: 85%;
+    width: 15%;
 }
 .skills-content .right .css::before{
-    width: 80%;
+    width: 20%;
 }
-.skills-content .right .bootstrap::before{
-    width: 85%;
+.skills-content .right .js::before{
+    width: 15%;
 }
-.skills-content .right .tailwind::before{
-    width: 80%;
-}
-.skills-content .right .mui::before{
-    width: 80%;
+.skills-content .right .react::before{
+    width: 15%;
 }
 .skills-content .right .mongo::before{
-    width: 55%;
+    width: 10%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 15%;
 }
-.skills-content .right .psql::before{
-    width: 50%;
-}
+
 /* feedback section styling */
 .feedback .title::after{
     content: "What They Said";
@@ -913,8 +895,34 @@ footer span a:hover{
         font-size: 27px !important;
     }
     .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .skills .skills-content .right .text{
         font-size: 19px;
+    }
+ 
+    .skills .skills-content .right{
+        /* padding: 0px; */
+        margin: 0px;
+    }
+    /* .skills .skills-content{
+        width: 100%;
+        display: flex;
+    }
+    .skills .skills-content .right{
+        width: 50%;
+    } */
+    .web_development{
+        width: 100%;
+    }
+    .sub_web_development{
+        width: 100%;
+        float: none;
+    }
+    .soft_skills{
+        width: 100%;
+    }
+    .sub_soft_skills{
+        width: 100%;
+        float: none;
     }
     .contact .right form .fields{
         flex-direction: column;
