@@ -571,6 +571,9 @@ section .title::after{
 }
 
 /* feedback section styling */
+.feedback{
+    max-height: fit-content;
+}
 .feedback .title::after{
     content: "What They Said";
 }
@@ -648,12 +651,11 @@ section .title::after{
 .contact-icon svg:hover{
     fill: #fff;    
 }
-.contact .title::after{
-    margin-top: 10px;
-    content: "... Get In Touch ...";
-    background: none;
+.contact .title{
+    /* background: none; */
     color: #111;
     font-weight: 600;
+    margin: -5px;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
