@@ -339,6 +339,7 @@ section .title::after{
 }
 .sub_soft_skills{
     width: 50%; /* Each sub-div takes up 50% of the main container */
+    padding-right: 5px;
     float: left; /* Float left to position side by side */
     box-sizing: border-box;
 }
