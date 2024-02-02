@@ -300,7 +300,48 @@ section .title::after{
     color: crimson;
     background: none;
 }
-
+.about-content .right .contest_link a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px 7px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about-content .right .contest_link a:hover{
+    color: crimson;
+    background: none;
+}
+.contest_link p{
+    margin-left: 40px;
+}
+.web_development{
+    width: 100%; /* Set the width of the main container as needed */
+    overflow: hidden; /* Clear float */
+    margin-top: -19px;
+    margin-left: -14px;
+}
+.sub_web_development{
+    width: 50%; /* Each sub-div takes up 50% of the main container */
+    float: left; /* Float left to position side by side */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 20px;
+}
+.soft_skill{
+    width: 100%; /* Set the width of the main container as needed */
+    overflow: hidden; /* Clear float */
+    /* margin-top: -19px;
+    margin-left: -14px; */
+}
+.sub_soft_skills{
+    width: 50%; /* Each sub-div takes up 50% of the main container */
+    float: left; /* Float left to position side by side */
+    box-sizing: border-box;
+}
 /* project section styling */
 .project, .services{
     color:#fff;
@@ -740,13 +781,19 @@ footer span a:hover{
 
 
 /* responsive media query start */
-@media (max-width: 1104px) {
+@media (max-width: 1140px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
+@media (max-width: 1024px) {
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+    }
+}
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -836,11 +883,11 @@ footer span a:hover{
         display: block;
         margin-top: -15px;
     }
-    .about-btn{
+    /* .about-btn{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
     .services .serv-content .card,
     .project .project-content .card{
         width: 100%;
@@ -886,4 +933,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    
+    
 }
