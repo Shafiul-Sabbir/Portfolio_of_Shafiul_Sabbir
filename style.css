@@ -515,7 +515,7 @@ section .title::after{
 .skills-content .right .js::before{
     width: 15%;
 }
-.skills-content .right .react::before{
+.skills-content .right .django::before{
     width: 15%;
 }
 .skills-content .right .mongo::before{
