@@ -50,8 +50,7 @@ $(document).ready(function(){
    
 
     // typing text animation script
-    const typedScript = ["Problem Solver.", "Django Developer", "React Developer.", "Designer.", "Thinker." ]; 
-    var typed = new Typed(".typing", {
+    const typedScript = ["Backend Developer.", "Django Developer.", "API Engineer.", "Full Stack Developer.", "Problem Solver."];    var typed = new Typed(".typing", {
         strings: typedScript,
         typeSpeed: 100,
         backSpeed: 60,
